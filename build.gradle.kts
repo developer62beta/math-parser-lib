@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.developer62"
-version = "1.0.2"
+version = "1.0.3"
 
 repositories {
     mavenCentral()
@@ -21,7 +21,7 @@ publishing {
             from(components["java"])
             groupId = "com.developer62"
             artifactId = "math-parser"
-            version = "1.0.2"
+            version = "1.0.3"
         }
     }
 }
