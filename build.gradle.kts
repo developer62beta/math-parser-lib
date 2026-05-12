@@ -4,8 +4,8 @@ plugins {
     `maven-publish`
 }
 
-group = "com.example"
-version = "1.0.0"
+group = "com.developer62"
+version = "1.0.1"
 
 repositories {
     mavenCentral()
@@ -19,9 +19,9 @@ publishing {
     publications {
         create<MavenPublication>("maven") {
             from(components["java"])
-            groupId = "com.example"
+            groupId = "com.developer62"
             artifactId = "math-parser"
-            version = "1.0.0"
+            version = "1.0.1"
         }
     }
 }

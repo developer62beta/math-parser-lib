@@ -1,5 +1,5 @@
 
-package com.example.parser
+package com.developer62.parser
 
 enum class TokenType {
     NUMBER,

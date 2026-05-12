@@ -1,5 +1,5 @@
 
-package com.example.parser
+package com.developer62.parser
 
 class Lexer(private val text: String) {
     private var pos = 0
