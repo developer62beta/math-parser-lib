@@ -36,6 +36,11 @@ class Lexer(private val text: String) {
                     pos++
                 }
 
+                current == '%' -> {
+                    tokens.add(Token(TokenType.PERCENT, "%"))
+                    pos++
+                }
+
                 current == '(' -> {
                     tokens.add(Token(TokenType.LPAREN, "("))
                     pos++

@@ -41,14 +41,17 @@ class Parser(private val text: String) {
     private fun term(): Double {
         var result = factor()
 
-        while (current.type == TokenType.MUL || current.type == TokenType.DIV) {
+        while (current.type == TokenType.MUL || current.type == TokenType.DIV || current.type == TokenType.PERCENT) {
             val token = current
             if (token.type == TokenType.MUL) {
                 eat(TokenType.MUL)
                 result *= factor()
-            } else {
+            } else if(token.type == TokenType.DIV){
                 eat(TokenType.DIV)
                 result /= factor()
+            }else{
+                eat(TokenType.PERCENT)
+                result = (factor()/result)*100
             }
         }
         return result

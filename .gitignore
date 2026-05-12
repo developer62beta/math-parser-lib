@@ -1,0 +1,23 @@
+# Gradle
+.gradle/
+
+# Build output
+build/
+
+# IntelliJ / Android Studio
+.idea/
+
+# VS Code
+.vscode/
+
+# Kotlin
+*.class
+*.jar
+main.kt
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

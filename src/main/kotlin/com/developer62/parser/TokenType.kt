@@ -7,6 +7,7 @@ enum class TokenType {
     MINUS,
     MUL,
     DIV,
+    PERCENT,
     LPAREN,
     RPAREN,
     EOF
