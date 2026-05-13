@@ -47,7 +47,7 @@ dependencyResolutionManagement {
 ```kotlin
 dependencies {
     implementation(
-        "com.github.developer62beta:math-parser-lib:a8f89d94"
+        "com.github.developer62beta:math-parser-lib:1.0.4"
     )
 }
 ```
